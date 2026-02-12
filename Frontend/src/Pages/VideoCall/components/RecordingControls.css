@@ -1,0 +1,91 @@
+.recording-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.record-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.start-recording {
+    background-color: #ff4444;
+    color: white;
+}
+
+.start-recording:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+.stop-recording {
+    background-color: #333;
+    color: white;
+}
+
+.stop-recording:hover {
+    background-color: #000;
+}
+
+.record-icon {
+    font-size: 1.2rem;
+}
+
+.stop-icon {
+    font-size: 1.2rem;
+}
+
+.recording-active {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.recording-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 68, 68, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ff4444;
+}
+
+.recording-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+}
+
+.recording-time {
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ff0000;
+    min-width: 70px;
+}

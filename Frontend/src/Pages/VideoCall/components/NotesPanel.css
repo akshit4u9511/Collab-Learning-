@@ -1,0 +1,138 @@
+.notes-panel {
+    position: fixed;
+    right: 0;
+    top: 70px;
+    bottom: 0;
+    width: 350px;
+    background: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.notes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 2px solid #3bb4a1;
+    background: #f8f9fa;
+}
+
+.notes-header h3 {
+    margin: 0;
+    color: #2d2d2d;
+    font-size: 1.2rem;
+}
+
+.notes-close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.notes-close-btn:hover {
+    background: #e0e0e0;
+    color: #000;
+}
+
+.notes-toolbar {
+    display: flex;
+    gap: 8px;
+    padding: 12px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #f8f9fa;
+}
+
+.notes-btn {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.notes-btn:hover {
+    background: #f0f0f0;
+}
+
+.notes-save-btn:hover {
+    background: #3bb4a1;
+    color: white;
+    border-color: #3bb4a1;
+}
+
+.notes-download-btn:hover {
+    background: #2d7da1;
+    color: white;
+    border-color: #2d7da1;
+}
+
+.notes-clear-btn:hover {
+    background: #ff6b6b;
+    color: white;
+    border-color: #ff6b6b;
+}
+
+.notes-last-saved {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+    color: #666;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.notes-editor-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.notes-editor {
+    height: 100%;
+}
+
+.notes-editor .ql-container {
+    border: none;
+    font-size: 0.95rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notes-editor .ql-editor {
+    min-height: 300px;
+}
+
+.notes-editor .ql-toolbar {
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    background: #f8f9fa;
+}
+
+.notes-footer {
+    padding: 10px 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    background: #f8f9fa;
+    color: #999;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .notes-panel {
+        width: 100%;
+        left: 0;
+    }
+}

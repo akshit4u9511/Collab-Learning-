@@ -1,0 +1,55 @@
+/* Frontend/src/Components/Navbar/Navbar.css */
+
+.navbar-custom {
+  background-color: var(--color-primary) !important;
+  /* Dark Blue */
+  z-index: 998;
+}
+
+.navbar-brand-custom {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--color-text-light) !important;
+  /* Beige Text */
+  font-weight: 500;
+}
+
+.nav-link-custom,
+.nav-link-custom .dropdown-toggle {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-text-light) !important;
+  /* Beige Text */
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom .dropdown-toggle:hover {
+  opacity: 1;
+}
+
+/* Style for the hamburger menu icon */
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(239, 236, 227, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: var(--color-secondary);
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  min-width: 200px !important;
+  padding: 8px 0 !important;
+}
+
+.dropdown-item {
+  padding: 10px 20px !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  font-size: 0.95rem !important;
+}
+
+.dropdown-divider {
+  margin: 8px 0 !important;
+}

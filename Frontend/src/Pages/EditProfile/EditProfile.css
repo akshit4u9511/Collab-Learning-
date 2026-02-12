@@ -1,0 +1,164 @@
+/* Frontend/src/Pages/EditProfile/EditProfile.css */
+
+.register_page {
+  min-height: calc(100vh - 80px); 
+  background-color: var(--color-bg-light); /* Beige background */
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-text-dark); /* Black text */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 0; 
+}
+
+.register_page h1 {
+  font-family: "Oswald", sans-serif;
+  color: var(--color-primary) !important; /* Forces Dark Blue */
+  margin-bottom: 30px;
+}
+
+/* This is the main white form container */
+.register_section {
+  background-color: #FFFFFF; /* White card */
+  color: var(--color-text-dark); /* Black text */
+  min-height: auto; 
+  width: 60%; 
+  border: 1px solid var(--color-border-light);
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Bootstrap Tabs Styling --- */
+.register_section .nav-tabs {
+  border-bottom: 2px solid var(--color-border-light);
+}
+.register_section .nav-tabs .nav-link {
+  font-weight: 500;
+  color: var(--color-text-muted);
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: transparent;
+}
+.register_section .nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
+.register_section .nav-tabs .nav-link.active {
+  color: var(--color-primary); /* Dark Blue */
+  font-weight: bold;
+  border: none;
+  border-bottom: 2px solid var(--color-primary);
+  background-color: transparent;
+}
+
+/* --- Form Elements --- */
+.register_section label {
+  font-weight: 500;
+  color: var(--color-primary) !important; /* Forces Dark Blue */
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  display: block; 
+  text-align: left;
+}
+
+/* --- THIS IS THE FIX --- */
+/* Text inputs */
+.register_section input[type="text"],
+.register_section input[type="number"],
+.register_section input[type="date"],
+.register_section input[type="file"],
+.register_section textarea,
+.register_section .form-select {
+  border-radius: 5px;
+  border: 1px solid var(--color-secondary) !important; /* Use Light Blue border */
+  padding: 8px 12px;
+  width: 100%;
+}
+
+.register_section input[type="text"]:focus,
+.register_section input[type="number"]:focus,
+.register_section input[type="date"]:focus,
+.register_section textarea:focus,
+.register_section .form-select:focus {
+  border-color: var(--color-primary) !important; /* Use Dark Blue on focus */
+  box-shadow: 0 0 0 2px rgba(74, 112, 169, 0.2);
+  outline: none;
+}
+
+/* Disabled inputs */
+.register_section input:disabled {
+  background-color: #f8f8f8;
+  color: var(--color-text-muted);
+}
+
+/* Added skill badges */
+.register_section .badge {
+  background-color: var(--color-secondary) !important; /* Light Blue */
+  color: var(--color-text-dark);
+  padding: 0.5em 0.75em !important;
+  font-size: 0.9rem !important;
+}
+
+/* --- Buttons --- */
+.register_section .btn {
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* "Add Skill" button */
+.register_section .btn-primary {
+  background-color: var(--color-primary); /* Dark Blue */
+  color: var(--color-text-light);
+}
+.register_section .btn-primary:hover {
+  background-color: #3b5a8c; /* Darker Blue */
+}
+
+/* "Save" button */
+.register_section .btn-warning {
+  background-color: var(--color-secondary); /* Light Blue */
+  color: var(--color-text-dark);
+}
+.register_section .btn-warning:hover {
+  background-color: #a0bde0; /* Darker Light Blue */
+}
+
+/* "Next" button */
+.register_section .mt-2.btn-primary {
+  background-color: var(--color-primary);
+}
+
+
+/* --- Media Query --- */
+@media (max-width: 768px) {
+  .register_section {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+/* --- Preview Styles --- */
+.previewContainer {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-text-dark);
+  margin-bottom: 20px;
+}
+.previewItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.previewLabel {
+  flex: 1;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.previewValue {
+  flex: 2;
+  margin-left: 20px;
+}

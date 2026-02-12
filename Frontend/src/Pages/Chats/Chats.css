@@ -1,0 +1,180 @@
+/* Frontend/src/Pages/Chats/Chats.css */
+
+.container-overall {
+  display: flex;
+  min-height: calc(100vh - 80px); /* Adjust based on navbar height */
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-right {
+  display: flex;
+  flex: 1;
+}
+
+.container-left {
+  width: 300px;
+  background-color: var(--color-bg-dark); /* Black */
+  border-right: 1px solid var(--color-border-light);
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- "Start New Chat" Button --- */
+.container-left .p-3 {
+  border-bottom: 1px solid var(--color-secondary); /* Light Blue */
+  padding: 1rem;
+}
+
+.container-left .p-3 .btn {
+  width: 100%;
+  background-color: var(--color-primary) !important; /* Dark Blue */
+  border-color: var(--color-primary) !important; /* Dark Blue */
+  color: var(--color-text-light); /* Beige Text */
+  font-weight: bold;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.container-left .p-3 .btn:hover {
+  background-color: #3b5a8c !important; /* Darker Blue */
+  border-color: #3b5a8c !important;
+}
+
+/* --- "Chat History" / "Requests" Tabs --- */
+.tabs {
+  display: flex;
+}
+
+.tabs .btn {
+  flex: 1;
+  border: none;
+  border-radius: 0;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.tabs .btn[style*="rgb(45, 45, 45)"], /* Targets old inactive style */
+.tabs .btn[style*="#2d2d2d"] {
+  background-color: var(--color-bg-dark) !important; /* Black */
+  color: var(--color-text-light) !important; /* Beige */
+  opacity: 0.7;
+}
+
+.tabs .btn[style*="rgb(59, 180, 161)"], /* Targets old active style */
+.tabs .btn[style*="#3bb4a1"] {
+  background-color: var(--color-bg-light) !important; /* Beige */
+  color: var(--color-text-dark) !important; /* Black */
+  opacity: 1;
+}
+
+/* --- Chat & Request List --- */
+.chat-list,
+.list-group[style*="padding: 10px"] {
+  padding: 10px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.chat-list .list-group-item,
+.list-group[style*="padding: 10px"] .list-group-item {
+  cursor: pointer;
+  margin-bottom: 10px !important;
+  padding: 10px !important;
+  border-radius: 5px !important;
+}
+
+/* Inactive List Item */
+.list-group-item[style*="lightgrey"] {
+  background-color: #f5f5f5 !important; /* A light grey */
+  color: var(--color-text-dark); /* Black */
+  border: 1px solid var(--color-border-light);
+}
+
+/* Active List Item */
+.list-group-item[style*="#3BB4A1"] {
+  background-color: var(--color-primary) !important; /* Dark Blue */
+  color: var(--color-text-light) !important; /* Beige */
+  border: 1px solid var(--color-primary);
+}
+
+
+/* --- Main Chat Window --- */
+.container-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-light); /* Beige */
+}
+
+/* Chat Header */
+.container-chat div[style*="border-bottom: 1px solid rgb(45, 45, 45)"] {
+  background-color: #FFFFFF; /* White */
+  border-bottom: 1px solid var(--color-border-light) !important;
+  color: var(--color-text-dark);
+}
+
+.container-chat div[style*="font-weight: bold"] {
+  color: var(--color-text-dark) !important; /* Black */
+}
+
+/* Chat Messages Area */
+.container-chat div[style*="height: calc(100% - 50px)"] {
+  color: var(--color-text-muted) !important; /* Muted Grey */
+  background-color: var(--color-bg-light); /* Beige */
+}
+
+.container-chat h3 { /* "Select a chat..." text */
+  color: var(--color-text-muted);
+}
+
+/* --- Chat Bubbles --- */
+/* Sender Bubble (You) */
+div[style*="background-color: rgb(59, 180, 161)"] {
+  background-color: var(--color-primary) !important; /* Dark Blue */
+  color: var(--color-text-light) !important; /* Beige */
+}
+
+/* Receiver Bubble (Them) */
+div[style*="background-color: rgb(45, 45, 45)"] {
+  background-color: #FFFFFF !important; /* White */
+  color: var(--color-text-dark) !important; /* Black */
+  border: 1px solid var(--color-border-light);
+}
+
+/* Chat Input Area */
+.container-chat div[style*="border-top: 1px solid rgb(45, 45, 45)"] {
+  border-top: 1px solid var(--color-border-light) !important;
+  background-color: #FFFFFF; /* White */
+}
+
+/* Chat Input Field */
+.container-chat input[type="text"] {
+  border: 1px solid var(--color-border-light) !important;
+}
+
+/* --- Modal Styles --- */
+.modalBG {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: var(--color-bg-light) !important; /* Beige */
+  color: var(--color-text-dark) !important; /* Black */
+  padding: 40px !important;
+  border-radius: 10px !important;
+}
+
+.modalContent h3 {
+  color: var(--color-primary); /* Dark Blue */
+}

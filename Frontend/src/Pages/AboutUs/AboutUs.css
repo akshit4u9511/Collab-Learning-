@@ -1,0 +1,67 @@
+/* Frontend/src/Pages/AboutUs/AboutUs.css */
+
+.about-us-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: var(--color-bg-dark); /* Black */
+  justify-content: center;
+  padding: 60px;
+  min-height: calc(100vh - 80px); /* Adjust based on navbar height */
+}
+
+.about-us-content {
+  max-width: 50vw;
+  margin-right: 60px;
+  justify-content: center;
+}
+
+.about-us-title {
+  font-family: "Oswald", sans-serif;
+  color: var(--color-secondary) !important; /* --- THIS IS THE FIX --- (Forces Light Blue) */
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.about-us-description {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-text-light); /* Beige Text */
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.about-us-description i {
+  color: var(--color-text-muted-light); /* Light Grey */
+}
+
+.about-us-image {
+  max-width: 40vw;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+@media (max-width: 780px) {
+  .about-us-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .about-us-content {
+    max-width: 90vw;
+    margin-right: 0;
+    margin-top: 30px;
+  }
+
+  .about-us-title,
+  .about-us-description {
+    text-align: center;
+  }
+  
+  .about-us-image {
+    max-width: 90vw;
+  }
+}

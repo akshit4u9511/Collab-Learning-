@@ -1,0 +1,67 @@
+/* Frontend/src/Pages/LandingPage/LandingPage.css */
+
+.lp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000; /* Black */
+  color: #EFECE3; /* Beige */
+}
+
+.lp-hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000; /* Black */
+  width: 100%;
+}
+
+.lp-title-box {
+  display: flex;
+  background-color: #000000; /* Black */
+  padding: 20px;
+  margin: 100px;
+  margin-top: 300px;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #4A70A9; /* Dark Blue */
+}
+
+.lp-title {
+  font-family: "Josefin Sans", sans-serif;
+  color: #EFECE3; /* Beige */
+  font-weight: 700;
+  font-size: 5.5rem;
+  text-align: center;
+}
+
+.lp-content-title {
+  text-align: center;
+  color: #000000 !important; /* --- THIS IS THE FIX --- */
+  font-family: "Oswald";
+  background-color: #EFECE3; /* Beige */
+  width: 100%;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 300px 0 0 0; 
+  padding: 20px 0;
+}
+
+.lp-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #EFECE3; /* Beige */
+  max-width: 1000px;
+  margin: 60px;
+}
+
+.lp-feature-title {
+  color: #8FABD4; /* Light Blue */
+}
+
+.lp-hero-image {
+  position: absolute;
+  width: 400px;
+  justify-content: center;
+}

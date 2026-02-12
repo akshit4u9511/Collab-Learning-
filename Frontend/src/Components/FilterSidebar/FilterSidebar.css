@@ -1,0 +1,123 @@
+.filter-sidebar {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: #efece3;
+    width: 280px;
+    height: fit-content;
+    position: sticky;
+    top: 2rem;
+    border: 1px solid #333;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #333;
+}
+
+.filter-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.clear-all-btn {
+    background: none;
+    border: none;
+    color: #4a90e2;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0;
+}
+
+.clear-all-btn:hover {
+    text-decoration: underline;
+}
+
+.filter-section {
+    margin-bottom: 1.5rem;
+}
+
+.filter-section h4 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #aaa;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.checkbox-label:hover {
+    color: #4a90e2;
+}
+
+.checkbox-label input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox-label input[type="checkbox"]:checked {
+    background-color: #4a90e2;
+    border-color: #4a90e2;
+}
+
+.checkbox-label input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+}
+
+.filter-slider {
+    width: 100%;
+    accent-color: #4a90e2;
+    cursor: pointer;
+}
+
+.filter-select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #efece3;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter-select:focus {
+    border-color: #4a90e2;
+}
+
+@media (max-width: 1024px) {
+    .filter-sidebar {
+        width: 100%;
+        position: static;
+        margin-bottom: 2rem;
+    }
+}

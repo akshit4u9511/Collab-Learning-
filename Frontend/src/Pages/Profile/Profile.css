@@ -1,0 +1,181 @@
+/* Frontend/src/Pages/Profile/Profile.css */
+
+.profile-container {
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-text-dark); /* Black Text */
+  padding: 40px 20px; /* Added more padding */
+  background-color: var(--color-bg-light); /* Beige Background */
+  min-height: calc(100vh - 80px); /* Fill screen */
+}
+
+.left-div {
+  display: flex;
+}
+
+.profile-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: space-between;
+  max-width: 1200px; /* Added max-width */
+  margin: 0 auto; /* Center the content */
+}
+
+.profile-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--color-primary); /* Dark Blue */
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 2rem !important;
+  margin-top: 10px;
+  color: var(--color-text-dark); /* Black Text */
+}
+
+.rating {
+  margin-top: 10px;
+}
+
+.rating-value {
+  margin-left: 5px;
+  color: var(--color-text-muted); /* Muted Grey */
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+/* --- Themed Buttons --- */
+.connect-button {
+  padding: 10px 20px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-primary); /* Dark Blue */
+  color: var(--color-text-light); /* Beige Text */
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.connect-button:hover {
+  background-color: #3b5a8c; /* Darker Blue */
+}
+
+.report-button {
+  padding: 10px 20px;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  border: 1px solid var(--color-text-muted); /* Muted Grey */
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--color-text-muted); /* Muted Grey */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.report-button:hover {
+  background-color: var(--color-text-muted);
+  color: var(--color-text-light);
+}
+
+.edit-links {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+}
+.edit-button {
+  padding: 10px 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-primary); /* Dark Blue */
+  color: var(--color-text-light); /* Beige Text */
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.edit-button:hover {
+  background-color: #3b5a8c; /* Darker Blue */
+}
+
+h2 {
+  color: var(--color-primary) !important; /* Dark Blue */
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto 20px auto; /* Center and space */
+  padding: 0 1rem;
+}
+
+.bio {
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto 40px auto; /* Center and space */
+  padding: 0 1rem;
+  color: var(--color-text-dark); /* Black Text */
+}
+
+.portfolio-links {
+  margin-top: 1rem;
+  display: flex;
+  margin-bottom: 3rem;
+  min-width: 15rem;
+  justify-content: space-between;
+}
+
+.link {
+  width: 50px;
+}
+.portfolio-links .link img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+.portfolio-links .link img:hover {
+  opacity: 1;
+}
+
+.skill-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  max-width: 1200px;
+  margin: 0 auto 40px auto; /* Center and space */
+  padding: 0 1rem;
+}
+
+.skill-box {
+  background-color: var(--color-secondary); /* Light Blue */
+  color: var(--color-text-dark); /* Black Text */
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.education-boxes,
+.project-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  max-width: 1200px;
+  margin: 0 auto 40px auto; /* Center and space */
+  padding: 0 1rem;
+}
+
+/* Media query from your old file, preserved */
+@media (max-width: 768px) {
+  /* ... */
+}

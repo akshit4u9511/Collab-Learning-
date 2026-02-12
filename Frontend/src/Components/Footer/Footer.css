@@ -1,0 +1,16 @@
+/* Frontend/src/Components/Footer/Footer.css */
+
+.footer-custom {
+  background-color: var(--color-bg-dark); /* Black */
+  color: var(--color-text-light); /* Beige */
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--color-secondary); /* Light Blue border */
+}
+
+.footer-custom p {
+  margin: 0;
+  color: var(--color-text-muted); /* Muted Grey */
+}

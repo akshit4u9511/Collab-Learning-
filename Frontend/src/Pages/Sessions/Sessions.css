@@ -1,0 +1,345 @@
+.sessions-container {
+  min-height: 86vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.sessions-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2d2d2d;
+}
+
+.sessions-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tab-button {
+  padding: 12px 30px;
+  background-color: #2d2d2d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #3bb4a1;
+}
+
+.tab-button.active {
+  background-color: #3bb4a1;
+  color: black;
+}
+
+.sessions-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Session Cards */
+.session-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.session-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.session-info {
+  flex: 1;
+}
+
+.session-partner {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2d2d2d;
+  margin-bottom: 5px;
+}
+
+.session-details {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+.session-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.session-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: #3bb4a1;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2d9580;
+}
+
+.btn-secondary {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #1a1a1a;
+}
+
+.btn-danger {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #ff5252;
+}
+
+/* Calendar View */
+.calendar-container {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.calendar-nav-btn {
+  background: #3bb4a1;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.calendar-nav-btn:hover {
+  background: #2d9580;
+}
+
+.calendar-month {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-day-header {
+  text-align: center;
+  font-weight: 600;
+  color: #999;
+  padding: 12px 0;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  padding: 8px;
+  min-height: 50px;
+}
+
+.calendar-day:hover:not(.empty) {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.calendar-day.today {
+  background-color: #ff8c42;
+  color: white;
+  border-radius: 50%;
+  font-weight: 600;
+}
+
+.calendar-day.has-session::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  width: 5px;
+  height: 5px;
+  background-color: #ff8c42;
+  border-radius: 50%;
+}
+
+.calendar-day.today.has-session::after {
+  background-color: white;
+}
+
+.calendar-day.other-month {
+  color: #ddd;
+}
+
+.calendar-day.empty {
+  background: transparent;
+  cursor: default;
+}
+
+.session-details-modal {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.no-sessions {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.no-sessions-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+
+/* Rating Stars */
+.rating-stars {
+  color: #ffa500;
+  font-size: 1.1rem;
+}
+
+/* Rating Modal */
+.rating-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.rating-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rating-modal h2 {
+  margin-bottom: 10px;
+  color: #2d2d2d;
+}
+
+.rating-modal-user {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.star-rating {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.star {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #ddd;
+}
+
+.star.filled {
+  color: #ffa500;
+}
+
+.star.hover {
+  transform: scale(1.2);
+}
+
+.rating-modal-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.rating-modal-btn {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.rating-submit-btn {
+  background-color: #3bb4a1;
+  color: white;
+}
+
+.rating-submit-btn:hover {
+  background-color: #2d9580;
+}
+
+.rating-submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.rating-cancel-btn {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.rating-cancel-btn:hover {
+  background-color: #e0e0e0;
+}

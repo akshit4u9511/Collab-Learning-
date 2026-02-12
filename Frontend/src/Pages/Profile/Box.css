@@ -1,0 +1,51 @@
+/* Frontend/src/Pages/Profile/Box.css */
+
+.box {
+  background-color: #FFFFFF; /* White background for the card */
+  color: var(--color-text-dark); /* Black Text */
+  padding: 20px; /* Increased padding */
+  margin-bottom: 2rem;
+  border-radius: 10px; /* Softer radius */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Softer shadow */
+  width: 100%;
+  text-align: left; /* Align text left */
+  border: 1px solid var(--color-border-light);
+}
+
+.box h5 {
+  color: var(--color-primary); /* Dark Blue */
+  font-weight: bold;
+}
+
+.desc {
+  margin: 0.6rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: var(--color-text-dark); /* Black Text */
+}
+
+.details {
+  margin: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1rem !important;
+  color: var(--color-text-muted); /* Muted Grey */
+}
+
+.boxskill-boxes {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* This is the skill tag *inside* the project box */
+.box .skill-box {
+  text-align: center;
+  background-color: var(--color-secondary); /* Light Blue */
+  color: var(--color-text-dark); /* Black */
+  margin-right: 1rem;
+  border-radius: 5px;
+  min-width: 4rem;
+  font-size: 12px;
+}
