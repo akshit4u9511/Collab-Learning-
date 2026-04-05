@@ -1,0 +1,84 @@
+/* Frontend/src/index.css */
+
+/* --- 1. Google Fonts --- */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital@0;1&family=Oswald:wght@200&display=swap");
+
+/* --- 2. Global Color Palette (Your new palette) --- */
+:root {
+  --color-bg-light: #EFECE3; /* Beige Background */
+  --color-bg-dark:  #000000; /* Black Background */
+
+  --color-text-dark:  #000000;   /* Black Text */
+  --color-text-light: #EFECE3;   /* Beige Text */
+  --color-text-muted: #555;
+  --color-text-muted-light: #8B949E; /* Muted grey text for dark BGs */
+
+  --color-primary:    #4A70A9;   /* Dark Blue (for buttons, links) */
+  --color-secondary:  #8FABD4;   /* Light Blue (for accents, borders) */
+  --color-border-light:#DDDDDD;  /* A light border */
+
+  /* ---- Legacy component-specific variables ---- */
+  --cyan: #3bb4a1;
+  --light-grey: #6d6e70;
+  --grey: #2d2d2d;
+  --yellow: #fbf1a4;
+  --dark-cyan: #013e38;
+  --red: #f56664;
+
+  --basefont: "Oswald", sans-serif;
+  --secfont: "Montserrat", sans-serif;
+}
+
+/* --- 3. Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* --- 4. Body defaults (using the new palette) --- */
+body {
+  margin: 0;
+  font-family: var(--secfont);
+  background-color: var(--color-bg-light); /* NEW default background */
+  color: var(--color-text-dark);          /* NEW default text */
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- 5. Scrollbar Styling (preserved) --- */
+::-webkit-scrollbar-track {
+  border: 5px solid #00211e;
+  background-color: #00211e;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #00211e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cyan);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+/* --- 6. Overrides (preserved) --- */
+.lp-content-title {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-dark);
+}
+
+.lp-description {
+  color: var(--color-text-light);
+}
