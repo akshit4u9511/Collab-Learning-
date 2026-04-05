@@ -1,11 +1,1 @@
-{
-  "name": "skillswap_backend",
-  "version": "1.0.0",
-  "description": "This is the backend of skillswap project.",
-  "main": "index.js",
-  "type": "module",
 
-    "nodemon": "^3.0.3",
-    "prettier": "^3.2.5"
-  }
-}
